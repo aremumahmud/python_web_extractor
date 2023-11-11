@@ -5,8 +5,8 @@ def readPage(page:str) :
     try :
         myreadSocket.connect((page,80))
     except :
-        print("could not connect to server or incorrect uri")
-        exit()
+        #print("could not connect to server or incorrect uri")
+        return False
 
     cmd = "GET http://"+page+"/ HTTP/1.0\n\n"
     cmd = cmd.encode()

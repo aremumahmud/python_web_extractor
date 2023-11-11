@@ -11,5 +11,19 @@ import the `extract_from_web()` function from `main.py` an use it by passing it 
 from main import extract_from_web
 
 myweb = "google.com" #only the host 
-extract_from_web(myweb) #this will get the webpage, store its headers in a json and contents in a html file
+extracted = extract_from_web(myweb) #this will return a dictionary for success and error messages
+```
+
+### Message format returned from the function
+
+```python
+
+# for sucess messages it will return 
+ {"error": False, "message":"sucessfully extracted and stored the extracted data"}
+
+# for an error message when storing the json fails due to permissions
+{ "error":True, "message":"could not store json file"}
+
+## for an error message when storing the html fails due to permissions
+{ "error":True, "message":"could not store html file"}
 ```

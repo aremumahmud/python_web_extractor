@@ -15,9 +15,9 @@ def toJson(data:list) :
 
         data_dict[key] = value
     
-    fhandle = open("info.json" , 'w')
 
     try :
+        fhandle = open("info.json" , 'w')
         fhandle.write(json.dumps(data_dict))
         return True
     except :
