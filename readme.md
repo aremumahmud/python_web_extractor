@@ -1,4 +1,4 @@
-## python WEB EXTRACTOR
+## Python WEB EXTRACTOR
 
 This python script fetches a webpage with its headers using HTTP/1.0 . it then goes urther to store header keys and values as json in an `info.json` file and the html contents in a `content.html` file
 
